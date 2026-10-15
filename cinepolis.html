@@ -1,44 +1,32 @@
 
 <!DOCTYPE html>
-
-<!-- Empieza todo el contenido de la página, el idioma es español -->
 <html lang="es">
-
-<!-- Aquí van los datos que no se ven en la página, pero ayudan a que funcione bien -->
 <head>
-    <!-- Sirve para que se vean bien las tildes, la Ñ y todos los caracteres -->
     <meta charset="UTF-8">
-    <!-- Hace que la página se acomode sola en celulares, tabletas y computadoras -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- El nombre que aparece en la pestaña del navegador -->
     <title>Cinépolis</title>
 
-    <!-- Aquí está el diseño: colores, tamaños, posiciones -->
     <style>
-        /* Esto aplica a TODO el documento para que todo se vea ordenado */
         * {
-            margin: 0;          /* Quito los espacios sobrantes de afuera */
-            padding: 0;         /* Quito los espacios sobrantes de adentro */
+            margin: 0;          /*  espacios sobrantes de afuera */
+            padding: 0;         /* espacios sobrantes de adentro */
             box-sizing: border-box; /* Hace que el tamaño se calcule bien */
             font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* El tipo de letra */
         }
 
-        /* Lo que afecta al cuerpo de la página */
         body {
             background-color: #000000; /* Fondo de color negro */
-            color: #FFFFFF;            /* Color de las letras: blanco */
-            line-height: 1.6;          /* Espacio entre renglones para leer bien */
+            color: #FFFFFF;            /* letras: blanco */
+            line-height: 1.6;          /* Espacio entre renglones  */
         }
 
         /* La barra de navegación de arriba */
         .navegacion {
-            background-color: #0B64B8; /* Color azul oficial de Cinépolis */
-            padding: 0;                /* Sin relleno extra */
+            background-color: #0B64B8; /* Color azul */
+            padding: 0;                /* Sin relleno  */
             text-align: center;       /* Los enlaces van al centro */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Sombra abajo para que se vea separada */
             position: sticky;         /* Se queda pegada arriba al bajar */
             top: 0;                    /* Se queda pegada en la parte de arriba */
-            z-index: 100;              /* Se ve por encima de todo lo demás */
         }
 
         /* Cada enlace de la barra */
