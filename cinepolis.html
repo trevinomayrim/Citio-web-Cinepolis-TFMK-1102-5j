@@ -41,33 +41,23 @@
             letter-spacing: 0.5px;  /* Un poquito de espacio entre cada letra */
         }
 
-        /* Cuando pasas el ratón por encima de un enlace */
-        .navegacion a:hover {
-            background-color: #095296; /* Se pone un azul más oscuro */
-        }
-
-        /* Estilo especial para el botón de Club Cinépolis */
+        /* botón de Club Cinépolis */
         .boton-club {
             background-color: #F2B400; /* Fondo amarillo */
             color: #000000 !important; /* Letras negras, obligatorio */
             font-weight: 700 !important; /* Letras más gruesas, obligatorio */
         }
 
-        /* Al pasar el ratón sobre el botón amarillo */
-        .boton-club:hover {
-            background-color: #E0A800 !important; /* Amarillo un poco más oscuro */
-            color: #000000 !important; /* Sigue con letras negras */
-        }
 
-        /* El encabezado principal de la página */
+        /* El encabezado  */
         .encabezado {
             background: linear-gradient(90deg, #0B64B8 0%, #1475D1 100%); /* Degradado de azul */
             color: #FFFFFF; /* Letras blancas */
-            padding: 50px 20px; /* Espacio de adentro arriba y abajo, a los lados */
+            padding: 50px 20px; /* Espacios de todos los lados */
             text-align: center; /* Todo centrado */
         }
 
-        /* El título grande del encabezado */
+        /* El título grande */
         .encabezado h1 {
             font-size: 42px; /* Letra muy grande */
             font-weight: 700; /* Muy gruesa */
@@ -75,22 +65,22 @@
             letter-spacing: 1px; /* Espacio entre letras */
         }
 
-        /* El texto pequeño del encabezado */
+        /* El  encabezado */
         .encabezado p {
             font-size: 18px; /* Tamaño mediano */
-            opacity: 0.9; /* Un poquito transparente para que no destaque tanto */
+            opacity: 0.9; /* Un poquito transparente  */
         }
 
-        /* Todo el contenido de en medio */
+        /* Todo el medio */
         .cuerpo {
             max-width: 1200px; /* Que no se haga muy ancho en pantallas grandes */
             margin: 40px auto; /* Espacio arriba y abajo, y se centra solo */
             padding: 0 20px; /* Espacio a los lados para que no pegue en el borde */
         }
 
-        /* Cada sección: cartelera, estrenos, tarjeta */
+        /* cartelera, estrenos, tarjeta */
         .seccion {
-            margin-bottom: 50px; /* Espacio grande debajo de cada sección */
+            margin-bottom: 50px; /* Espacio grande debajo de cada uno*/
         }
 
         /* Los títulos de cada sección */
@@ -113,7 +103,7 @@
 
         /* La tarjeta de cada película */
         .pelicula {
-            background-color: #1A1A1A; /* Gris muy oscuro, casi negro */
+            background-color: #1A1A1A; /* Gris muy oscuro*/
             border-radius: 6px; /* Esquinas redondeadas */
             box-shadow: 0 3px 10px rgba(11, 100, 184, 0.4); /* Sombra azul suave */
             overflow: hidden; /* Lo que se salga se esconde */
@@ -123,8 +113,8 @@
         /* La imagen de la película */
         .pelicula img {
             width: 100%; /* Ocupa todo el ancho de la tarjeta */
-            height: 340px; /* Altura fija para que todas se vean igual */
-            object-fit: cover; /* Recorta la imagen para que no se deforme */
+            height: 340px; /* Altura  para que todas se vean igual */
+            object-fit: cover; /* Recorta la imagen  */
             display: block; /* Sin espacio extra debajo de la imagen */
         }
 
@@ -141,14 +131,14 @@
             margin-bottom: 10px; /* Espacio debajo del nombre */
         }
 
-        /* Cada dato de la película */
+        /*  dato de la película */
         .pelicula .info p {
             font-size: 14px; /* Letra pequeña */
             color: #CCCCCC; /* Gris claro */
             margin-bottom: 5px; /* Espacio entre líneas */
         }
 
-        /* Las etiquetas: "Número de Tarjeta", "NIP" */
+        /* "Número de Tarjeta", "NIP" */
         label {
             display: block; /* Cada una en su propia línea */
             margin-top: 15px; /* Espacio arriba */
@@ -171,16 +161,16 @@
             color: #FFFFFF; /* Letras blancas */
         }
 
-        /* Cuando haces clic dentro del cuadro para escribir */
+        /* Cuando haces clic para escribir */
         input:focus {
             outline: none; /* Quito el borde por defecto */
             border-color: #F2B400; /* El borde se pone amarillo */
         }
 
-        /* El botón de enviar o consultar */
+        /* El botón de enviar r */
         button {
             margin-top: 20px; /* Espacio arriba */
-            padding: 12px 30px; /* Espacio de adentro arriba-abajo y lados */
+            padding: 12px 30px; /* Espacio de todos lados */
             background-color: #F2B400; /* Fondo amarillo */
             color: #000000; /* Letras negras */
             border: none; /* Sin borde extra */
@@ -188,11 +178,6 @@
             font-weight: 700; /* Letras gruesas */
             font-size: 16px; /* Tamaño mediano */
             cursor: pointer; /* El ratón se convierte en manita al pasar */
-        }
-
-        /* Al pasar el ratón por encima del botón */
-        button:hover {
-            background-color: #E0A800; /* Amarillo más oscuro */
         }
 
         /* La parte de abajo de la página */
@@ -226,7 +211,6 @@
     </style>
 </head>
 
-<!-- Aquí empieza lo que se ve en la pantalla -->
 <body>
 
     <!-- La barra de enlaces de arriba -->
@@ -238,22 +222,24 @@
         <a href="acceso.html">Inicio / Registro</a> <!-- Abre la otra página -->
     </nav>
 
-    <!-- El encabezado principal con el título -->
+    <!-- el título -->
     <header class="encabezado" id="inicio">
         <h1>CINÉPOLIS</h1>
         <p>Disfruta de tus peliculas favoritas en cine</p>
     </header>
 
-    <!-- Todo el contenido principal de la página -->
+    <!-- Todo  -->
     <main class="cuerpo">
 
-        <!-- Sección de películas que ya están en el cine -->
+        <!-- películas que ya están en el cine -->
         <section class="seccion" id="cartelera">
             <h2>Peliculas en Cartelera</h2>
             <div class="contenedor-peliculas">
 
-                <!-- Tarjeta de Jack -->
+                <!--  Jack -->
                 <div class="pelicula">
+					
+      				  <!-- poner imagen  -->
                     <img src="jack.jpg" alt="Jack">
                     <div class="info">
                         <h3>Jack</h3>
@@ -263,7 +249,7 @@
                     </div>
                 </div>
 
-                <!-- Tarjeta de Un Robot Salvaje -->
+                <!--  Robot Salvaje -->
                 <div class="pelicula">
                     <img src="robotsalvaje.jpg" alt="Un Robot Salvaje">
                     <div class="info">
@@ -288,12 +274,12 @@
             </div>
         </section>
 
-        <!-- Sección de películas que van a salir pronto -->
+        <!--  películas que van a salir pronto -->
         <section class="seccion" id="estrenos">
             <h2>Proximos Estrenos</h2>
             <div class="contenedor-peliculas">
 
-                <!-- Tarjeta de Coco -->
+                <!--  Coco -->
                 <div class="pelicula">
                     <img src="coco.jpg" alt="Coco">
                     <div class="info">
@@ -303,7 +289,7 @@
                     </div>
                 </div>
 
-                <!-- Tarjeta de El Libro de la Vida -->
+                <!-- El Libro de la Vida -->
                 <div class="pelicula">
                     <img src="librodavida.jpg" alt="El Libro de la Vida">
                     <div class="info">
@@ -316,26 +302,26 @@
             </div>
         </section>
 
-        <!-- Sección para consultar la tarjeta de puntos -->
+        <!--  consultar la tarjeta de puntos -->
         <section class="seccion" id="club-tarjeta">
             <h2>Tarjeta Club Cinépolis</h2>
             <p>Ingresa los datos de tu tarjeta para consultar tus puntos y beneficios:</p>
             
-            <!-- Espacio para escribir el número de la tarjeta -->
+            <!-- escribir el número de la tarjeta -->
             <label>Numero de Tarjeta:</label>
             <input type="text" placeholder="1234 5678 9012 3456">
             
-            <!-- Espacio para escribir la contraseña -->
+            <!--  escribir la contraseña -->
             <label>NIP / Contraseña:</label>
             <input type="password" placeholder="••••">
             
-            <!-- Botón para enviar los datos -->
+            <!-- Botón para enviar  -->
             <button>Consultar Datos</button>
         </section>
 
     </main>
 
-    <!-- La parte de abajo con los datos del cine -->
+    <!-- Pie de pagina  -->
     <footer class="footer">
         <div class="contenido-footer">
             <p>CINÉPOLIS - La Capital del Cine</p>
@@ -346,12 +332,11 @@
         </div>
     </footer>
 
-<!-- Cierro todo lo que abrí -->
+
 </body>
 </html>
         </div>
     </footer>
 
-<!-- Cierro todo lo que abrí -->
 </body>
 </html>
