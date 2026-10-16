@@ -1,29 +1,20 @@
-<!-- Le avisa al navegador que usamos HTML5 -->
+
 <!DOCTYPE html>
-
-<!-- Empieza la página, idioma español -->
 <html lang="es">
-
-<!-- Datos técnicos que no se ven directamente -->
 <head>
-    <!-- Para que se vean bien tildes y Ñ -->
     <meta charset="UTF-8">
-    <!-- Para que se acomode en celulares y computadoras -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Nombre que aparece en la pestaña -->
     <title>Inicio / Registro - Cinépolis</title>
-
-    <!-- Todo el diseño de la página -->
     <style>
-        /* Aplica a todo para ordenar */
+      
         * {
             margin: 0;          /* Quito espacios sobrantes de afuera */
             padding: 0;         /* Quito espacios sobrantes de adentro */
-            box-sizing: border-box; /* Calcula bien los tamaños */
+            box-sizing: border-box; /* Calcula los tamaños */
             font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* Tipo de letra */
         }
 
-        /* El cuerpo de la página */
+        /* El cuerpo  */
         body {
             background-color: #000000; /* Fondo negro */
             color: #FFFFFF;            /* Letras blancas */
@@ -32,8 +23,8 @@
 
         /* Barra de navegación arriba */
         .navegacion {
-            background-color: #0B64B8; /* Azul de Cinépolis */
-            padding: 0;                /* Sin relleno extra */
+            background-color: #0B64B8; /* Azul  */
+            padding: 0;                /* Sin relleno */
             text-align: center;       /* Enlaces al centro */
             box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Sombra para separar */
             position: sticky;         /* Se queda pegada arriba */
@@ -46,28 +37,17 @@
             color: #FFFFFF;          /* Letras blancas */
             padding: 18px 22px;      /* Espacio alrededor */
             text-decoration: none;   /* Sin raya debajo */
-            font-weight: 600;        /* Letras un poco gruesas */
+            font-weight: 600;        /* Letras gruesas */
             font-size: 15px;         /* Tamaño normal */
             text-transform: uppercase; /* Todo en mayúsculas */
             letter-spacing: 0.5px;  /* Espacio entre letras */
         }
 
-        /* Al pasar el ratón por encima */
-        .navegacion a:hover {
-            background-color: #095296; /* Azul más oscuro */
-        }
-
         /* Estilo especial del botón Club */
         .boton-club {
             background-color: #F2B400; /* Fondo amarillo */
-            color: #000000 !important; /* Letras negras obligatorio */
+            color: #000000 !important; /* Letras negras  */
             font-weight: 700 !important; /* Más grueso obligatorio */
-        }
-
-        /* Al pasar el ratón sobre el botón Club */
-        .boton-club:hover {
-            background-color: #E0A800 !important; /* Amarillo más oscuro */
-            color: #000000 !important; /* Sigue con letras negras */
         }
 
         /* Encabezado de arriba */
@@ -85,7 +65,7 @@
             margin-bottom: 8px; /* Espacio debajo */
         }
 
-        /* Texto pequeño del encabezado */
+        /* Texto del encabezado */
         .encabezado p {
             font-size: 16px; /* Mediano */
             opacity: 0.9; /* Un poquito transparente */
@@ -93,12 +73,12 @@
 
         /* El contenido de en medio */
         .cuerpo {
-            max-width: 480px; /* Más angosto que la otra página */
+            max-width: 480px; /* Más chico que la otra página */
             margin: 40px auto; /* Espacio arriba y se centra solo */
             padding: 0 20px; /* Espacio a los lados */
         }
 
-        /* Cada recuadro del formulario */
+        /* recuadros del formulario */
         .seccion {
             background-color: #1A1A1A; /* Gris oscuro */
             padding: 30px; /* Espacio de adentro */
@@ -108,17 +88,17 @@
             border-top: 4px solid #F2B400; /* Raya amarilla arriba */
         }
 
-        /* Títulos de los recuadros */
+        /* Títulos  recuadros */
         .seccion h2 {
             color: #F2B400; /* Amarillo */
-            font-size: 22px; /* Mediano-grande */
+            font-size: 22px; /* Mediogrande */
             font-weight: 700; /* Gruesa */
             margin-bottom: 20px; /* Espacio debajo */
             padding-bottom: 8px; /* Espacio antes de la raya */
             border-bottom: 2px solid #0B64B8; /* Raya azul debajo */
         }
 
-        /* Las etiquetas: "Correo", "Contraseña", etc. */
+        /* Las etiquetas: "Correo", "Contraseña"... */
         label {
             display: block; /* Cada una en su línea */
             margin-top: 15px; /* Espacio arriba */
@@ -136,11 +116,11 @@
             border: 1px solid #333333; /* Borde gris oscuro */
             border-radius: 4px; /* Esquinas redondeadas */
             font-size: 15px; /* Tamaño de letra */
-            background-color: #2A2A2A; /* Fondo gris un poquito más claro */
+            background-color: #2A2A2A; /* Fondo gris poquito más claro */
             color: #FFFFFF; /* Letras blancas */
         }
 
-        /* Al hacer clic para escribir */
+        /*  clic para escribir */
         input:focus {
             outline: none; /* Quito el borde por defecto */
             border-color: #F2B400; /* Borde amarillo */
@@ -158,11 +138,6 @@
             font-weight: 700; /* Gruesa */
             cursor: pointer; /* Se vuelve manita */
             margin-top: 20px; /* Espacio arriba del botón */
-        }
-
-        /* Al pasar el ratón sobre el botón */
-        button:hover {
-            background-color: #E0A800; /* Amarillo más oscuro */
         }
 
         /* El pie de página de abajo */
@@ -189,10 +164,10 @@
     </style>
 </head>
 
-<!-- Lo que se ve en la pantalla -->
+
 <body>
 
-    <!-- Barra de navegación igual que en la otra página -->
+    <!-- Barra de navegación -->
     <nav class="navegacion">
         <a href="cinepolis.html#inicio">Inicio</a>               <!-- Va a la página principal -->
         <a href="cinepolis.html#cartelera">Cartelera</a>         <!-- Va a las películas -->
@@ -201,7 +176,7 @@
         <a href="acceso.html">Inicio / Registro</a>              <!-- Aquí mismo -->
     </nav>
 
-    <!-- Encabezado de arriba -->
+    <!-- Encabezado  -->
     <header class="encabezado">
         <h1>CINÉPOLIS</h1>
         <p>Accede a tu cuenta o crea una nueva</p>
@@ -244,15 +219,16 @@
 
     </main>
 
-    <!-- Pie de página de abajo -->
+    <!-- Pie de página -->
     <footer class="footer">
         <div class="contenido-footer">
             <p>&copy; 2026 Cinépolis | Todos los derechos reservados</p>
             <p>Avenida del Cine #123, Ciudad de Mexico</p>
             <p>Atencion a clientes: 55-1234-5678</p>
+            <p>Treviño Fierro Marim Kassandra 1102 5j</p>
         </div>
     </footer>
 
-<!-- Cierro todo -->
+
 </body>
 </html>
